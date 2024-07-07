@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fishing</title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;700&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="../static/lock.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <br /><br /><br /><br />
+    <div class="welcome">
+      <h2 style="color: azure">Hunt Phishinig Site</h2>
+    </div>
+
+    <div class="userinput">
+      <h2>Enter URL</h2>
+      <br />
+      <form action="/predict" method="post">
+        <div class="input">
+          <input id="url" name="predict" type="text" size="50" required /><br />
+          <button class="button">Predict</button>
+        </div>
+      </form>
+      <br />
+      <br />
+      <!--Template to be replaced-->
+      <div id="result">{{ prediction_text }}</div>
+    </div>
+  </body>
+</html>
